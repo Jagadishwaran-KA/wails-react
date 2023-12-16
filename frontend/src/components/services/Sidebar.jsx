@@ -41,14 +41,15 @@ function Sidebars() {
                   Services
                 </Sidebar.Item>
               </Link>
-
-              <Sidebar.Item
-                className="border-b-2 hover:bg-green-300 border border-gray-100 rounded-lg overflow-hidden shadow-md"
-                href="#"
-                icon={IoSettingsSharp}
-              >
-                Settings
-              </Sidebar.Item>
+              <Link to="server">
+                <Sidebar.Item
+                  className="border-b-2 hover:bg-green-300 border border-gray-100 rounded-lg overflow-hidden shadow-md"
+                  href="#"
+                  icon={IoSettingsSharp}
+                >
+                  Server
+                </Sidebar.Item>
+              </Link>
             </Sidebar.ItemGroup>
           </Sidebar.Items>
         </Sidebar>

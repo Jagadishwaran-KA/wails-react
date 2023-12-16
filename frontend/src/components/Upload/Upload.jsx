@@ -37,9 +37,9 @@ function Upload() {
         <div className="space-x-4">
           <label className="text-lg font-mono tracking-tight">Sent to</label>
           <select className="border-0 border-b-2 border-solid border-gray-500 p-1">
-            <option>Everyone</option>
-            <option>Node A</option>
-            <option>Node B</option>
+            <option>Delhi Server</option>
+            <option>Bangalore Server</option>
+            <option>Server C</option>
           </select>
         </div>
 
@@ -61,6 +61,7 @@ function Upload() {
       <div className="mt-10">
         <div className="flex space-x-32">
           <h1 className="text-2xl font-mono">Selected Files</h1>
+
           <button className="bg-gray-600 text-white p-2  rounded-md  tracking-wider ">
             Select File
           </button>
@@ -84,7 +85,7 @@ function Upload() {
               </div>
             </div>
           ))}
-
+          <input type="file" placeholder="Choose File" />
           <button className="bg-green-600 text-white p-3 w-28 rounded-md font-semibold ">
             Upload File
           </button>

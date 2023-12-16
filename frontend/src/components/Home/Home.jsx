@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   const date = new Date();
@@ -111,8 +112,9 @@ function Home() {
       <h1 className="text-3xl">Welcome Amanda Smith ^_^ </h1>
       <div className="flex flex-col justify-center cursor-pointer mt-5">
         <button className="bg-black text-white p-3 rounded-md tracking-widest">
-          UPLOAD FILES{" "}
+          <Link to="upload">UPLOAD FILES </Link>
         </button>
+
         <div className="flex space-x-10 mt-10">
           <div className="space-y-2">
             <h1 className="text-xl font-mono mt-3">Sent</h1>
@@ -153,9 +155,11 @@ function Home() {
           </div>
         </div>
       </div>
-      <button className="bg-gray-600 text-white p-3 rounded-md -tracking-tighter mt-10">
-        Create New Folder +
-      </button>
+      <Link to="upload">
+        <button className="bg-gray-600 text-white p-3 rounded-md -tracking-tighter mt-10">
+          Create New Folder +
+        </button>
+      </Link>
     </div>
   );
 }
