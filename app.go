@@ -20,8 +20,8 @@ func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
 }
 
-// Upload returns a greeting for the given name
-func (a *App) Upload(filePath string) string {
+// UploadFile returns a greeting for the given name
+func (a *App) UploadFile(filePath string) string {
 	// Compress File
 	err := compressLZMA(filePath, filePath+".xz")
 	if err != nil {
