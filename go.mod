@@ -1,10 +1,11 @@
 module changeme
 
-go 1.21
+go 1.21.5
 
-toolchain go1.21.5
-
-require github.com/wailsapp/wails/v2 v2.7.1
+require (
+	github.com/ulikunitz/xz v0.5.11
+	github.com/wailsapp/wails/v2 v2.7.1
+)
 
 require (
 	github.com/bep/debounce v1.2.1 // indirect

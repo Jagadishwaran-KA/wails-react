@@ -1,4 +1,5 @@
 import React from "react";
+import { Upload } from "../../../wailsjs/go/main/App";
 
 function Upload() {
   const date = new Date();
@@ -86,7 +87,8 @@ function Upload() {
             </div>
           ))}
           <input type="file" placeholder="Choose File" />
-          <button className="bg-green-600 text-white p-3 w-28 rounded-md font-semibold ">
+          <!-- TOOD: Add file upload functionality by passing the file name to the Upload function in ../../wailsjs/go/main/App -->
+          <button className="bg-green-600 text-white p-3 w-28 rounded-md font-semibold">
             Upload File
           </button>
         </div>

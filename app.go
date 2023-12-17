@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"fmt"
 )
 
 // App struct
@@ -21,7 +20,19 @@ func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
 }
 
-// Greet returns a greeting for the given name
-func (a *App) Greet(name string) string {
-	return fmt.Sprintf("Hello %s, It's show time!", name)
+// Upload returns a greeting for the given name
+func (a *App) Upload(filePath string) string {
+	// Compress File
+	err := compressLZMA(filePath, filePath+".xz")
+	if err != nil {
+		return err.Error()
+	}
+
+	// Upload File
+	res, err := PostFile("http://localhost:9090/api/v1/files/upload", filePath+".xz")
+	if err != nil {
+		return err.Error()
+	}
+
+	return res
 }

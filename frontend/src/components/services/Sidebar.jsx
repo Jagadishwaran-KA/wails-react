@@ -25,7 +25,7 @@ function Sidebars() {
               </Link>
               <Link to="upload">
                 <Sidebar.Item
-                  className="border-b-2  hover:bg-green-300 border border-gray-100 rounded-lg overflow-hidden shadow-md"
+                  className="border-b-2 hover:bg-green-300 border border-gray-100 rounded-lg overflow-hidden shadow-md"
                   href="#"
                   icon={FaShareSquare}
                 >
@@ -34,7 +34,7 @@ function Sidebars() {
               </Link>
               <Link to="services">
                 <Sidebar.Item
-                  className="border-b-2 bg-green-300 border hover:bg-green-300 border-gray-100 rounded-lg overflow-hidden shadow-md"
+                  className="border-b-2 hover:bg-green-300 border border-gray-100 rounded-lg overflow-hidden shadow-md"
                   href="#"
                   icon={GrServices}
                 >
